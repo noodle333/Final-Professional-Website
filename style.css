@@ -382,8 +382,6 @@ header li a:hover {
   justify-content: center;
   align-items: center;
   background: #353535;
-  font-size: 3rem;
-  color: #fff;
   box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem,
     rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
   height: 100%;
@@ -411,10 +409,24 @@ header li a:hover {
   padding-bottom: 4rem;
 }
 
+.card p {
+  opacity: 1;
+  color: #fff;
+}
+
 @media screen and (min-width: 600px) {
   .card-big {
     grid-row: span 2 / auto;
     grid-column: span 2 / auto;
+  }
+  .card-big p {
+    font-size: 3rem;
+    color: #fff;
+    opacity: 1;
+  }
+  .card p:hover {
+    opacity: 0.7;
+    cursor: pointer;
   }
 }
 
